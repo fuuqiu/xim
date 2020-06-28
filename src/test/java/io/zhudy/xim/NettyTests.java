@@ -26,5 +26,6 @@ public class NettyTests {
     var buf3 = buf1.resetReaderIndex().duplicate();
     buf1.duplicate();
     System.out.println(buf3.readCharSequence(2, StandardCharsets.UTF_8));
+    System.out.println(buf1.equals(buf3));
   }
 }

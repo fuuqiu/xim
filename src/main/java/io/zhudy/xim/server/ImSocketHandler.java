@@ -155,7 +155,6 @@ public class ImSocketHandler
     }
 
     try {
-
       final var content = frame.content();
       final DataInput input = new ByteBufInputStream(content);
       final var packet = PacketHelper.MAPPER.readValue(input, Packet.class);

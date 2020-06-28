@@ -45,7 +45,7 @@ public class EnvTests {
 
   @Test
   public void ignoreCase() throws Exception {
-    restoreSystemProperties(
+      restoreSystemProperties(
         () -> {
           System.setProperty("xim.env", "pRod");
           assertThat(Env.getEnv()).isEqualTo(Env.PROD);
