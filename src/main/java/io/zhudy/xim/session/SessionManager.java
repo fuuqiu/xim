@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 public interface SessionManager {
 
   /** */
-  String SESSION_LISTENER_NAME_FOR_IOC = "session.listeners";
+  String SESSION_LISTENER_NAME_FOR_IOC = "session.listenersxx";
 
   /**
    * 添加会话.
